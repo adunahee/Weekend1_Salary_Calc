@@ -7,9 +7,10 @@ let totMonSal = 0;
 
 //employee class
 class Employee{
-    constructor(firstName, lastName, ID, salary){
+    constructor(firstName, lastName, ID, title, salary){
         this.name = firstName + ' ' + lastName;
         this.ID = ID;
+        this.title = title;
         this.salary = salary;
         this.monthlySalary = this.salary/12;
     };
@@ -22,13 +23,9 @@ const formatterUSD = new Intl.NumberFormat ('en-US' , {
     minimumFractionDigits: 2
 })// end currency formatter
 
-//filling employee array
-employees.push(new Employee('Anthony', 'Dunahee', 4669, 23456));
-employees.push(new Employee('Peter', 'Parker', 2345, 34567));
-employees.push(new Employee('Wonder', 'Woman', 1234, 12345));
-
 function readyNow() {
-    // console.log('JQ sourced.');
+    // to run test code ensure client.test.js is NOT commented out
+    testCode();
 }
 
 //function that prints monthly salary in table
@@ -45,4 +42,7 @@ function printMonthlySalary () {
     }
 }
 
-
+function printEmployeeData() {
+    for(employee of employees)
+    $('tbody').append('<tr><td>' + employee.name + '</td><td>' + employee.ID + '</td><td>' + employee.title + '</td><td>' + formatterUSD.format(employee.salary) + '</td></tr>');
+}
