@@ -13,13 +13,6 @@ A 'Submit' button should collect the form information, store the information to 
 
 Create a delete button that removes an employee from the DOM. For Base mode, it does **not** need to remove that Employee's salary from the reported total.
 
-### Files Provided
-No files have been provided. Fork and clone this repository or create a new GitHub repository to get started. Make sure to commit regularily!
-
-### Wireframe
-
-![Wireframe](salary-calc-wireframe.png)
-
 ## Stretch Mode
 
 Create an `Employee` class to store the information about each new employee in an Array.
@@ -28,17 +21,20 @@ Add styling or extra functionality that fits with the theme of this assignment.
 
 Once the employee is deleted, update the total spend on salaries account for this employee's removal. This will require that the logic knows which element was removed. You will need to use `.text()` as a getter or look into jQuery's `.data()` function. This is tricky! 
 
-## Reminder About Modes
+### Wireframe
 
-Above, we introduced the concept of levels of difficulty. "Mode" is how we will typically refer to each level. Below is a brief explanation of
+![Wireframe](salary-calc-wireframe.png)
 
-* what to expect when attempting each mode
-* if they are required or not
+###Planning
+First commit
+create and source files
+html layout
+initial styling
 
-Mode | Description
---- | ---
-Base | required
-Stretch | optional, stretches your understanding and may require additional research
+dec vars/classes/arrs
+    create employee class
+        name, id, job title, annual salary
+    create employees array
+    add some employees using constructor
+    create monthly salary function that returns salary formatted as a number
 
-## Assignment Submission
-Check in your repo, then turn in your work via the Prime Academy Assignment Application at [http://primeacademy.io](http://primeacademy.io), as usual and don't hesitate to hit up the Slack channel as needed!
