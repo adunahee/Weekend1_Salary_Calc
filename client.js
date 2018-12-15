@@ -23,9 +23,9 @@ const formatterUSD = new Intl.NumberFormat ('en-US' , {
 })// end currency formatter
 
 function readyNow() {
-    // to run test code ensure client.test.js is NOT commented out
     $('#addEmployeeButton').on('click', addEmployee );
     $('tbody').on('click', 'tr', removeEmployee);
+    // to run test code ensure client.test.js is NOT commented out
     testCode();
 }
 
@@ -38,9 +38,13 @@ function printMonthlySalary () {
     $('#totMonSalCell').html(formatterUSD.format(totMonSal));
     if (totMonSal >= 20000 ) {
         $('tfoot').css('background-color', 'rgba(255, 0, 0, 0.685');
+        $('input').prop('disabled', true);
+        $('button').prop('disabled', true);
     }
     else {
         $('tfoot').css('background-color', '');
+        $('input').prop('disabled', false);
+        $('button').prop('disabled', false);
     }
 }//end printing monthly salary
 
