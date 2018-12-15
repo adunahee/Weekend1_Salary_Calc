@@ -46,3 +46,10 @@ clears input fields
 prints monthly salary
 prints employee
 
+delete row on click
+    traverse from parent
+    remove this
+    update monthly
+
+test functions for unusual behavior
+require input values for submitting
