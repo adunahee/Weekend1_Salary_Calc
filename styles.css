@@ -53,6 +53,27 @@ div {
     margin: 10px 0px;
 }
 
-tfoot {
+tfoot > tr {
     text-align: right;
+    border-top: 3px;
+    border-style: solid;
+    border-top-color: grey;
+}
+
+td{
+    text-align: center;
+}
+
+tr {
+    padding: 10px;
+}
+
+#monthlySalaryLabel {
+    text-align: right;
+}
+
+tbody > tr > td {
+    border-bottom: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: grey;
 }
