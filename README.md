@@ -38,9 +38,11 @@ dec vars/classes/arrs
     add some employees using constructor
     create monthly salary function that returns salary formatted as a number
 
+create function for printing employees arr into tbody
+
 listener for button click
 button click feeds input field to constructor
 clears input fields
 prints monthly salary
+prints employee
 
-create function for printing employees arr into tbody
